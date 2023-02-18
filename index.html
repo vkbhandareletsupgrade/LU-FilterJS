@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LU-FilterJS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontAwesome/css/all.min.css">
+</head>
+<body>
+    <div class="left" id="left">
+        <div class="left-header">
+            <h3>Filter</h3>
+            <i class="fa fa-filter"></i>
+        </div>
+        <div class="first filter-div">
+            <p>Search by Name</p>
+            <select name="name" id="name">
+                <option value="">Select</option>
+                <option value="Colgate">Colgate</option>
+                <option value="Bursh">Bursh</option>
+                <option value="Dettol">Dettol</option>
+            </select>
+        </div>
+
+        <div class="Second filter-div">
+            <p>Search by Category</p>
+            <select name="name" id="name">
+                <option value="">Select</option>
+                <option value="Colgate">Colgate</option>
+                <option value="Bursh">Bursh</option>
+                <option value="Dettol">Dettol</option>
+            </select>
+        </div>
+
+        <div class="third filter-div">
+            <p>Search Product Under</p>
+            <input type="number" placeholder="Search Product Under">
+        </div>
+    </div>
+    <main>
+        <header>
+            <div class="hamburger" id="toggle-sidebar">
+                <i class="fa fa-hamburger"></i>
+            </div>
+            <h2>Filter Data Project In Javascript</h2>
+            <input type="search" placeholder="Search...">
+        </header>
+    </main>
+    <script src="index.js"></script>
+    <script src="fontAwesome/js/all.min.js"></script>
+    <script>
+        document.getElementById('toggle-sidebar').addEventListener('click',()=>{
+            document.getElementById('left').classList.toggle('toggle-sidebar');
+        })
+    </script>
+</body>
+</html>
